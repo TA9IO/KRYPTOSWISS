@@ -1,0 +1,16 @@
+.description-main-container {
+margin-bottom: $margin-bottom-50px;
+width: $percent-50;
+@include media("<1000px") {
+    width: 100%;
+
+}
+    .description-container {
+        .info-descreption,
+        .sizes-descreption {
+            line-height: 7px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+    }
+}

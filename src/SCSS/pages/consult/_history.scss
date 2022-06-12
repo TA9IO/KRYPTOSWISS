@@ -1,0 +1,7 @@
+.history-main-container {
+
+    width: $percent-50;
+    @include media("<1000px") {
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+// variables & functions
+@import 'variables';
+// reset styles, helpers & base layout
+@import 'base';
+// responsive Break Points
+@import 'breakpoints';
+
+// sections ( header, joinUs, top Creactors etc... )
+/*
+**Home section
+*/
+@import 'pages/home/header';
+@import 'pages/home/categories';
+@import 'pages/home/limited';
+@import 'pages/home/topcreators';
+@import 'pages/home/joinus';
+/*
+**explore section
+*/
+
+@import 'pages/explore/sidebar';
+@import 'pages/explore/mainpage';
+
+
+/*
+**explore section
+*/
+@import 'pages/consult/itemimage';
+@import 'pages/consult/userinfo';
+@import 'pages/consult/descreption';
+@import 'pages/consult/details';
+@import 'pages/consult/price';
+@import 'pages/consult/history';
+@import 'pages/consult/auction';
+
+
+//components ( button, card, nav, footer, etc...)
+
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/input';
+@import 'components/title';
+/**404**/
+@import 'pages/pgae404';
+
+// utiliteis (margin, padding, border, font, etc...)
+
+.app {
+    background: rgb(6, 11, 28);
+    background: linear-gradient(0deg, rgba(6, 11, 28, 1) 20%, rgba(29, 51, 136, 1) 100%);
+    width: 100%;
+
+    .nav-container {
+        padding: 0px 50px;
+
+    }
+
+}
+.page-container {
+
+    padding: 70px 5%;
+
+}
+
+.bold {
+
+    font-weight: bold;
+
+}
+
+.explore-container {
+
+    padding-top: calc($margin-from-the-navbar - 50px);
+
+}
+
+.consult-main-page-container {
+
+    .consult-container {
+        padding: 0 5%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .top-section,
+        .bottom-section{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+
+        }
+        .top-section {
+
+            @include media("<tablet") {
+              flex-wrap: wrap;      
+            }
+        }
+        .bottom-section{
+            @include media("<1000px") {
+                flex-wrap: wrap;      
+
+            }
+        }
+        
+         
+        
+    }
+
+}

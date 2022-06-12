@@ -1,0 +1,18 @@
+.image-item-container {
+
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10% 0;
+    @include media(">1000px") {
+       width: 70%;
+       }
+    img {
+
+
+        height: 100%;
+        width: 100%
+
+    }
+
+}

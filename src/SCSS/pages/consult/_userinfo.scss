@@ -1,0 +1,84 @@
+/*****general*****/
+.title {
+
+    color: $main-grey-color;
+    font-weight: bold;
+    font-size: 17px
+}
+
+.info {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30%;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 10px;
+    border-radius: 40px;
+}
+.single-item-container {
+
+    width: 25%;
+    @include media("<1100px") {
+        width: 30%;
+    }
+    @include media("<1000px") {
+        width: 40%;
+    }
+    @include media("<tablet") {
+        width: 50%;
+    }
+
+}
+
+.user-info-container {
+    border-right: 1px solid $main-border-color;
+    margin-bottom: $margin-bottom-100px;
+    width: $percent-50;
+    @include media("<tablet") {
+        width: 100%;
+    margin-bottom: 20px;
+        
+      }
+
+
+    .flex-container {
+
+        display: flex;
+        justify-content: flex-start;
+
+        .created-by-contaier {
+            
+            margin-right: 50px;
+
+            .info {
+                width: 100%;
+                .img-container {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 5px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .collection-contaier {
+        .info {
+            justify-content: center;
+            p {
+                color: black;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
+    }
+}

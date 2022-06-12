@@ -1,0 +1,254 @@
+.header-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    .header-left-section {
+        flex-basis: 50%;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 1px initial;
+        }
+
+        p {
+            font-size: 1.1em;
+            font-weight: 200;
+            opacity: 0.5;
+        }
+
+        .buttons-section {
+            margin: 60px 0;
+            display: flex;
+
+        }
+
+        .summeray {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 10px 10px 30px;
+            width: 90%;
+        }
+    }
+
+    .header-right-section {
+        flex-basis: 50%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .img-container {
+            position: relative;
+            width: 90%;
+            z-index: 1;
+
+            img {
+                width: 100%;
+            }
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 85%;
+                top: 20%;
+                left: -5%;
+                background: transparent;
+                border-bottom: 5px solid #4867ED;
+                border-left: 5px solid #4867ED;
+                position: absolute;
+                z-index: -2
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 85%;
+                bottom: 20%;
+                right: -5%;
+                background: transparent;
+                border-top: 5px solid #56C2E9;
+                border-right: 5px solid #56C2E9;
+                position: absolute;
+                z-index: -2
+            }
+        }
+
+        .item-info-container {
+            background: linear-gradient(to right, rgba(72, 102, 237, 0.5) 5%, rgba(86, 194, 233, 0.5) 100%);
+            background-color: rgba(72, 102, 237, 0.5);
+
+            // if you want to put it floating over the image like in the original designe
+            // position: absolute;
+            // top: 50%;
+            // left: 3%;
+            width: 100%;
+            border-radius: 7px;
+
+
+            .item-info {
+
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                h3 {
+
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    line-height: 1.7em;
+
+                }
+
+                .item-info-plus {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+
+                    .auction-data {
+
+                        display: flex;
+                        justify-content: space-around;
+                        width: 60%;
+
+                    }
+
+                    div {
+                        text-align: center;
+
+
+                        p {
+                            margin: 5px 2px;
+                        }
+                    }
+                }
+
+                .button-container {
+
+                    // margin-top: 10px;
+                    cursor: pointer;
+
+                    button {
+                        box-shadow: 0px 0px 5px rgb(58, 58, 58);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media("<=desktop") {
+    .header-container {
+
+        .header-left-section {
+
+            h2 {
+
+                font-size: 1.2em;
+
+
+            }
+
+            h1 {
+                font-size: 2.2em;
+                margin: 1px initial;
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 200;
+                opacity: 0.5;
+            }
+
+            .buttons-section {
+                margin: 40px 0;
+            }
+
+        }
+
+    }
+
+    @include media("<=1080px") {
+
+        .header-container {
+
+            flex-direction: column;
+
+            .header-left-section {
+                width: 100%;
+                margin-bottom: 50px;
+
+                h2 {
+
+                    font-size: 1.5em;
+                }
+
+                h1 {
+                    font-size: 2.2em;
+                    margin: 1px initial;
+                }
+
+                p {
+                    font-size: 1em;
+                    font-weight: 200;
+                    opacity: 0.5;
+                }
+
+                .buttons-section {
+                    margin: 40px 0;
+
+                    @include media("<=tablet") {
+
+                        button {
+
+                            font-size: 0.8em;
+
+                        }
+                    }
+                }
+
+                .summeray {
+                    @include media("<=tablet") {
+                        margin: 20px 5px 10px 5px;
+                        width: 100%;
+                    }
+                }
+            }
+            .header-right-section {
+                justify-content: center;
+                .item-info-container {
+                    .item-info-plus {
+                        @include media("<=560px") {
+                            flex-direction: column;
+                        }
+                        .auction-data {
+
+                            @include media("<=560px") {
+                                width: 95%!important;
+                                margin-bottom: 10px;
+                        justify-content: space-between;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

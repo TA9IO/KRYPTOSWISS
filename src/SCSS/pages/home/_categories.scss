@@ -1,0 +1,32 @@
+.categories-container {
+    margin-top: 100px;
+    .categories {
+        display: flex;
+        flex-direction: column;
+        .elements-conatiner {
+            display: flex;
+            margin-top: 50px; 
+            flex-wrap: wrap;
+            .single-ele {
+                text-align: center;
+                transition: 500ms;
+                width: 25%;
+                cursor: pointer;
+                @include media("<=1050px") {
+                    width: 50%!important;
+                }
+                @include media("<=tablet") {
+                    width: 100%!important;
+                    margin-bottom: 1em;
+                }
+                img {
+                   
+                    width: 100%;
+                }
+                &:hover {
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+}

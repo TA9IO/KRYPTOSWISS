@@ -1,0 +1,86 @@
+.top-section-container {
+    color: white;
+    position: relative;
+    margin-top: 80px;
+
+    // creators plural with "S" :)
+    .rank {
+        font-size: 1.5em;
+        position: relative;
+        top: -15px;
+        left: 15px;
+        color: #fff;
+        display: grid;
+        place-items: center;
+        height: 30px;
+        min-width: 30px;
+        background-color: #202b55;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 2px 4px 8px 2px black;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            // background-color: #2f363e;
+            border-radius: 30%;
+        }
+    }
+
+    // creators Plural with "S" :)
+    .creators-conatiner {
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        // creators single no "S" :)
+
+        .creator-container {
+            @include media("<desktop") {
+                width: 33%;
+            }
+            @include media("<826px") {
+                width: 50%;
+            }
+            @include media("<540px") {
+                width: 100%;
+            }
+            @include media("<=phone") {
+                justify-content: center;
+
+            }
+
+            width: 20%;
+            padding-bottom: 1.2em;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 42px;
+            border-bottom: 3px solid #364EB6;
+
+            .creator-image-container {
+                margin-right: 10px;
+
+
+            }
+
+            .creator-info-container {
+                display: flex;
+                flex-direction: column;
+
+                .creator-name {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                .creator-sells {
+                    .etherium-icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

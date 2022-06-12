@@ -1,0 +1,32 @@
+.details-main-container {
+    margin-bottom: $margin-bottom-50px;
+    .details-container {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        div {
+            font-size: 1.4em;
+            color: $main-grey-color;
+            margin-left: 10px;
+        }
+    }
+    .main-tags-container {
+        margin-top: $margin-bottom-100px;
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            @include media("<1000px") {
+                width: 100%;
+            }
+            .tag {
+                padding: 5px 10px;
+                box-shadow: 0px 0px 10px #ccc;
+                margin: 5px;
+                border-radius: 7px;
+                cursor: pointer;
+            }
+        }
+    }
+}

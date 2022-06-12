@@ -1,0 +1,199 @@
+$primary : #486AED;
+
+.btn {
+
+    font-weight: 500;
+    transition: all .2s ease;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 31px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+}
+
+.btn--primary--solid {
+    border: none;
+    background: $primary;
+    background: linear-gradient(90deg, #486AED 0%, #56BEE9 100%);
+
+    &:hover {
+        background: linear-gradient(90deg, #8785ff 5%, #1e3696 100%);
+        background-color: #8785ff;
+        position: relative;
+        top: 0px;
+
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.btn--primary--solid--round {
+    border: none;
+    background: $primary;
+    background: linear-gradient(90deg, #486AED 0%, #56BEE9 100%);
+    border-radius: 42px;
+
+    &:hover {
+        background: linear-gradient(90deg, #8785ff 5%, #1e3696 100%);
+        background-color: #8785ff;
+        position: relative;
+        top: 0px;
+
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.btn--primary--outline {
+    background: transparent;
+    border-radius: 11px;
+    padding: 12px 35px;
+    text-align: center;
+    border: 1px solid white
+}
+
+.btn--primary--nogradiant--solid {
+
+    background-color: #4A8DE8;
+
+
+}
+
+.btn--no--outline {
+    background: transparent;
+    border: none;
+    padding: 8px 10px;
+    
+    &:hover{
+
+        border-bottom: 2px solid white;
+    }
+
+}
+
+.radius-5px {
+
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.btn-with {
+
+    width: 100%;
+
+}
+
+
+// *************************************** //
+
+.button-primary {
+    background: $primary;
+    background: linear-gradient(90deg, #486AED 0%, #56BEE9 100%);
+    border-radius: 42px;
+    // display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 31px;
+    text-decoration: none;
+    // text-shadow: 0px 1px 3px #000;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.1s ease-in-out;
+
+
+    &:hover {
+        background: linear-gradient(90deg, #8785ff 5%, #1e3696 100%);
+        background-color: #8785ff;
+        position: relative;
+        top: 0px;
+
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+
+
+.button-no-bg {
+
+    background: transparent;
+    border-radius: 11px;
+    transition: 200ms;
+    padding: 12px 35px;
+    color: #ffffff;
+    font: normal bold 17px/1 "Open Sans", sans-serif;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0 1px #ffffff;
+
+    }
+
+
+}
+
+.margin-right {
+
+    margin-right: 30px;
+
+}
+
+
+.button-no-gradiant {
+
+    background-color: #4A8DE8;
+
+}
+
+/* A class that is used to style the button. */
+
+// .button-no-bg {
+
+//     background: transparent;
+//     border-radius: 20px;
+//     transition: 200ms;
+//     padding: 12px 35px;
+//     color: #ffffff;
+//     font: normal bold 17px/1 "Open Sans", sans-serif;
+//     text-align: center;
+//     border: none;
+//     cursor: pointer;
+//     border: 2px solid white;
+//     width: 100%;
+
+
+
+// }
+
+
+.no-bg-btn {
+    background: transparent;
+    border-radius: 7px;
+    transition: 200ms;
+    padding: 12px 35px;
+    color: #ffffff;
+    font: normal bold 17px/1 "Open Sans", sans-serif;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 100%;
+
+
+}

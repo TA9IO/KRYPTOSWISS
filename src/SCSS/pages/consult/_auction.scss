@@ -1,0 +1,107 @@
+$padding-20px: 20px;
+
+.auction-item-container {
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px #ccc;
+    padding: 5px $padding-20px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .listed-by-info-container {
+        .info-section {
+            display: flex;
+            align-items: center;
+            line-height: 5px;
+
+            .date {
+                color: $main-grey-color;
+            }
+
+            .img-container {
+                height: 40px;
+                width: 40px;
+                margin-right: 10px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .price-containe {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            margin-right: 20px;
+        }
+    }
+}
+
+.auction-container {
+    .winner-info-container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.7;
+
+        .img-container {
+            margin-bottom: 15px;
+            height: 50px;
+            width: 50px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .auction-winner {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .auction-price {
+            font-size: 1.5em;
+            font-weight: bold;
+
+            .euro-price {
+                color: $main-grey-color
+            }
+        }
+
+        .auction-date {
+            color: $main-grey-color;
+            font-size: 1em;
+        }
+
+        .auction-owner {
+
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px #ccc;
+            padding: 5px 20px;
+            border-radius: 12px;
+
+            span {
+                color: $main-grey-color;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
