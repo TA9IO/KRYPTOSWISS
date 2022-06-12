@@ -19,7 +19,7 @@ function Tags() {
       <h3>Tags</h3>
       <div className="tags-container">
         {tags.map((tag, i) => {
-          return <div className="tag">{tag}</div>;
+          return <div key={tag} className="tag">{tag}</div>;
         })}
       </div>
     </div>

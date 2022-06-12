@@ -87,13 +87,12 @@ function Auction() {
       {listedByInfo.map((item, i) => {
         const bnbPrice = (item.price / item.tobnb).toFixed(3);
         return (
-          <div className="winner-info-container">
+          <div key={item.date} className="winner-info-container">
             <div className="img-container">
               <img
                 className="user-img"
                 src={item.img}
                 alt="user img"
-                srcset=""
               />
             </div>
 
@@ -128,7 +127,8 @@ const AuctionItemComponent = ({ loopData }) => {
         const { img, name, date, price, currency, action } = item;
 
         return (
-          <div className="auction-item-container">
+          //dont use the index ass a key this is just for testing
+          <div key={i} className="auction-item-container">
             <div className="listed-by-info-container">
               <div className="info-section">
                 <div className="img-container">

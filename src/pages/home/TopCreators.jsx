@@ -2,7 +2,6 @@ import React from "react";
 import { topUsers } from "../../assets/dummyData/topUsers";
 import { Title } from "../../components";
 
-console.log(topUsers);
 
 function TopCreators() {
   return (

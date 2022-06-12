@@ -1,7 +1,6 @@
 import React from "react";
 import { limited } from "../../assets/dummyData/limited.js";
 import { Btn, Title, ButtonNoBg } from "../../components";
-console.log(limited);
 function Limited() {
   return (
     <div className="limited-section-container">
