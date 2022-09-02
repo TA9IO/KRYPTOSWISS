@@ -23,7 +23,7 @@
 
 
 /*
-**explore section
+**consult section
 */
 @import 'pages/consult/itemimage';
 @import 'pages/consult/userinfo';
@@ -33,6 +33,15 @@
 @import 'pages/consult/history';
 @import 'pages/consult/auction';
 
+/*
+CreateNFT 
+*/
+@import 'pages/createNFT/createNFT';
+/*
+Profile 
+*/
+@import 'pages/profile/profile';
+@import 'pages/profile/profileTopSec';
 
 //components ( button, card, nav, footer, etc...)
 
@@ -41,6 +50,7 @@
 @import 'components/footer';
 @import 'components/input';
 @import 'components/title';
+@import 'components/nftInput';
 /**404**/
 @import 'pages/pgae404';
 

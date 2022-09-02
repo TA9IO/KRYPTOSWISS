@@ -1,0 +1,64 @@
+.nft-input-title-container {
+
+    display: flex;
+    flex-direction: column;
+
+    .nft-input-number-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        // width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        overflow: hidden;
+        outline: none;
+
+        input {
+
+          
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            width: 70%;
+        }
+
+        & > p {
+
+            font-weight: bold;
+            color: rgb(97, 97, 97);
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+
+
+        }
+
+
+    }
+}
+
+.nft-input-title {
+
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+
+}
+
+.nft-input {
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+  
+    border-radius: 0.5rem;
+    outline: none;
+
+}

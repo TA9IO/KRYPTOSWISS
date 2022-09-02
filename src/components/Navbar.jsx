@@ -63,7 +63,10 @@ function Navbar() {
         </div>
         {/**** */}
         <div className="wallet-container lgscreen-btn ">
+        
+          <Link to="/CreateNFT">
           <Btn className="fsz">connect Wallet</Btn>
+          </Link>
         </div>
         {/***********-_ SMALL SCREEN _-****************/}
         <div className="navbar-smallscreen">

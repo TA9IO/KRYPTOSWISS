@@ -1,9 +1,11 @@
 import "./SCSS/index.scss";
-import { Navbar, Footer, Input} from "./components";
+import { Navbar, Footer, Input } from "./components";
 import Home from "./routes/Home";
 import Explore from "./routes/Explore";
 import Consult from "./routes/Consult";
-import Page404 from './pages/Page404'
+import CreateNFTRoute from "./routes/CreateNFTRoute";
+import Profile from "./routes/Profile";
+import Page404 from "./pages/Page404";
 
 import {
   BrowserRouter as Router,
@@ -15,20 +17,21 @@ import {
 function App() {
   return (
     <div className="app">
-    <Router>
-    <Navbar></Navbar>
+      <Router>
+        <Navbar></Navbar>
 
-      <Routes>
-      
-        <Route path='/' element={<Home />}/>
-        <Route path='/home' element={<Home />}/>
-        <Route path='/explore' element={<Explore />}/>
-        <Route path='/Consult' element={<Consult />}/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/Consult" element={<Consult />} />
+          <Route path="/CreateNFT" element={<CreateNFTRoute />} />
+          <Route path="/Profile" element={<Profile />} />
 
-        <Route path='*' element={<Page404 />} />
-      </Routes>
-      <Footer></Footer>
-  </Router>
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+        <Footer></Footer>
+      </Router>
     </div>
   );
 }

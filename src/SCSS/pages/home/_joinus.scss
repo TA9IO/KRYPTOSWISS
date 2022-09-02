@@ -29,10 +29,19 @@ $mring: 100px;
 
 
             img {
+                cursor: pointer;
                 border-radius: 40px;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                   
+                    // trans form: scale(1.02);
+                    filter: brightness(130%);
+
+                }
+            
             }
         }
 
@@ -42,6 +51,7 @@ $mring: 100px;
             width: calc(60% - $mring);
             margin-left: $mring;
             position: relative;
+
             @include media("<1060px") {
                 width: 100%;
                 margin: 0;
@@ -73,6 +83,7 @@ $mring: 100px;
                 @include media(">1060px", "<1200px") {
                     font-size: 25px;
                 }
+
                 @include media("<1060px") {
                     font-size: 1.2em;
                     line-height: 1.2em;
@@ -92,6 +103,7 @@ $mring: 100px;
                     @include media(">1060px", "<1200px") {
                         top: 58%;
                     }
+
                     @include media("<1060px") {
                         top: 100%;
                         left: 0%;
@@ -107,6 +119,7 @@ $mring: 100px;
                     position: absolute;
                     bottom: 75%;
                     right: -5%;
+
                     @include media("<1060px") {
                         bottom: 48%;
                         right: 5%;

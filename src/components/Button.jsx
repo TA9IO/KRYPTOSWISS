@@ -7,6 +7,7 @@ function Button({ value, className, handleClick, style }) {
     type="button"
     value={value ? value : "click"}
     style={{...style}}
+    onClick={handleClick}
     ></input>
   );
 }

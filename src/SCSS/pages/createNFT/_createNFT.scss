@@ -1,0 +1,111 @@
+.create-nft-page-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 3rem;
+    @include media("<=500px") {
+        padding: 120px 2rem;
+        
+    }
+    &>h1 {
+
+        font-size: 4rem;
+        text-shadow: 0 1px 0 #ccc,
+            0 2px 0 #c9c9c9,
+            0px 0px 6px rgba(255,255,255,0.7),
+            0 0 5px rgba(0, 0, 0, .1),
+            0 1px 3px rgba(0, 0, 0, .3),
+            0 3px 5px rgba(0, 0, 0, .2),
+            0 5px 10px rgba(0, 0, 0, .25),
+            0 10px 10px rgba(0, 0, 0, .2),
+            0 20px 20px rgba(0, 0, 0, .15);
+
+
+        @include media("<=tablet") {
+            font-size: 3rem;
+
+        }
+
+        @include media("<=500px") {
+            font-size: 2rem;
+        }
+    }
+
+
+    .create-nft {
+
+        width: 644px;
+        max-width: 100%;
+        box-sizing:border-box;
+
+        h1 {
+
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: rgb(255 255 255 / 71%)
+        }
+
+    }
+
+    .nft-file {
+        .nft-file-upload {
+            margin-top: 1rem;
+
+            .file-style {
+                cursor: pointer;
+                display: flex;
+                padding: 1.25rem;
+                background-color: rgba(0, 174, 255, 0.062);
+                flex-direction: column;
+                align-items: center;
+                border-radius: 1rem;
+                border: 1px dashed $main-border-color;
+                transition: 0.1s;
+                &:hover {
+
+                    background-color: rgba(10, 18, 46, 0.87);
+                border: 1px solid $main-border-color;
+
+                }
+
+                .nft-file-info {
+                    text-align: center;
+                    flex-direction: column;
+
+                    &>p {
+                        font-size: 1.2rem;
+                        line-height: 1.75rem;
+                        font-weight: 600;
+                        color: $main-border-color;
+                        font-family: monospace;
+                        @include media("<=500px") {
+                            font-size: 1rem;
+                            margin: 2px;
+
+                        }
+
+                    }
+
+                    &>svg {
+
+                        color: $main-border-color;
+
+                        @include media("<=500px") {
+                            width: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .nft-name,
+    .nft-create-button {
+
+        margin-top: 2rem;
+    }
+
+}

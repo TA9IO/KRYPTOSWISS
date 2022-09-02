@@ -24,4 +24,16 @@ export const dummyNavData = [
     //dont use this method for to generate keys i use just to remove the err since this is dummy data
     id: Math.random().toString(32).slice(2, 20),
   },
+  {
+    name: "CreateNFT",
+    path: "/createnft",
+    //dont use this method for to generate keys i use just to remove the err since this is dummy data
+    id: Math.random().toString(32).slice(2, 20),
+  },
+  {
+    name: "Profile",
+    path: "/profile",
+    //dont use this method for to generate keys i use just to remove the err since this is dummy data
+    id: Math.random().toString(32).slice(2, 20),
+  },
 ];
