@@ -1,12 +1,12 @@
+import React from 'react'
 import "./SCSS/index.scss";
-import { Navbar, Footer, Input } from "./components";
+import { Navbar, Footer, Input, ScrollToTop } from "./components";
 import Home from "./routes/Home";
 import Explore from "./routes/Explore";
 import Consult from "./routes/Consult";
 import CreateNFTRoute from "./routes/CreateNFTRoute";
 import Profile from "./routes/Profile";
 import Page404 from "./pages/Page404";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -15,11 +15,15 @@ import {
   Outlet,
 } from "react-router-dom";
 function App() {
+
+
+
+
+
   return (
     <div className="app">
       <Router>
         <Navbar></Navbar>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

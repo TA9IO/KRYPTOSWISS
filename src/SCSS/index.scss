@@ -1,3 +1,7 @@
+// font 'Poppins'
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 // variables & functions
 @import 'variables';
 // reset styles, helpers & base layout
@@ -25,6 +29,7 @@
 /*
 **consult section
 */
+@import 'pages/consult/consult';
 @import 'pages/consult/itemimage';
 @import 'pages/consult/userinfo';
 @import 'pages/consult/descreption';
@@ -51,14 +56,23 @@ Profile
 @import 'components/input';
 @import 'components/title';
 @import 'components/nftInput';
+@import 'components/card';
+@import 'components/tagInput';
+
 /**404**/
 @import 'pages/pgae404';
 
 // utiliteis (margin, padding, border, font, etc...)
 
+* {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
 .app {
-    background: rgb(6, 11, 28);
-    background: linear-gradient(0deg, rgba(6, 11, 28, 1) 20%, rgba(29, 51, 136, 1) 100%);
+    background: #131a50;
+    // background: linear-gradient(0deg, rgba(6, 11, 28, 1) 20%, rgba(29, 51, 136, 1) 100%);
     width: 100%;
 
     .nav-container {
@@ -67,54 +81,14 @@ Profile
     }
 
 }
+
 .page-container {
 
-    padding: 70px 5%;
+    padding: 0 7%;
+    padding-bottom: 3rem;
 
 }
 
 .bold {
-
     font-weight: bold;
-
-}
-
-.explore-container {
-
-    padding-top: calc($margin-from-the-navbar - 50px);
-
-}
-
-.consult-main-page-container {
-
-    .consult-container {
-        padding: 0 5%;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .top-section,
-        .bottom-section{
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-
-        }
-        .top-section {
-
-            @include media("<tablet") {
-              flex-wrap: wrap;      
-            }
-        }
-        .bottom-section{
-            @include media("<1000px") {
-                flex-wrap: wrap;      
-
-            }
-        }
-        
-         
-        
-    }
-
 }

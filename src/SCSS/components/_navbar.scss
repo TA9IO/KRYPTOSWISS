@@ -2,11 +2,6 @@
     transform: translate3d(0, -100%, 0);
 }
 
-.scroll-up .navbar {
-    background-color: #1B2F7D;
-    height: 100px;
-}
-
 .active {
     border-bottom: 3px solid #027fff;
     border-image: linear-gradient(90deg, #027fff, #a6ebfc, ) 1;
@@ -14,12 +9,10 @@
 
 /******************/
 .nav-bg {
-
     background-color: #1B2F7D;
-
 }
 .navbar {
-    position: fixed;
+    position: sticky;
     display: flex;
     justify-content: center;
     top: 0;
@@ -27,12 +20,13 @@
     right: 0;
     z-index: 999;
     transition: all 200ms ease-in-out;
+    max-height: 6rem;
 
     .inner-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding: 5px;
+        padding: 1rem;
         width: 90%;
 
         .logo-container {
@@ -45,19 +39,20 @@
 
 
             img {
-                width: 150px;
-                height: 130px;
+                width: 3.2rem;
+                // height: 130px;
                 border-radius: 50%;
-                margin-right: 10px;
+                margin-right: 1em;
             }
-
-            .logo-header {
-                color: white;
-                font-size: 20px;
-                position: absolute;
-                top: 80px;
-                font-weight: bold;
-            }
+            // logo header in  case u add text 
+            // just uncomment this :) 
+            // .logo-header {
+            //     color: white;
+            //     font-size: 20px;
+            //     position: absolute;
+            //     top: 80px;
+            //     font-weight: bold;
+            // }
         }
 
         .search-bar-container {
@@ -81,7 +76,7 @@
                     .link {
                         padding-bottom: 7px;
                         color: white;
-                        font-size: 1.3em;
+                        font-size: 1em;
                         margin-right: 20px;
                         text-decoration: none;
                         transition: 100ms;
@@ -93,10 +88,16 @@
                     }
                 }
             }
+
         }
     }
 
+    .connect-wallet-btn {
+        font-size: 1em;
+        border-radius: 15px;
+        background : #235cd0
 
+    }
     ///***********-_ SMALL SCREEN _-****************/
 
     .navbar-smallscreen {

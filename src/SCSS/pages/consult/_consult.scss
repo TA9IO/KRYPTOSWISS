@@ -1,0 +1,28 @@
+.consult-main-page-container {
+
+    .consult-container {
+        padding: 0 5%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .top-section,
+        .bottom-section {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+        }
+        .top-section {
+
+            @include media("<tablet") {
+                flex-wrap: wrap;
+            }
+        }
+        .bottom-section {
+            @include media("<1000px") {
+                flex-wrap: wrap;
+
+            }
+        }
+    }
+}

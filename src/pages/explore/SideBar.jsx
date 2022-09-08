@@ -24,7 +24,7 @@ function SideBar({ data, children }) {
     <React.Fragment>
       <aside className={toggleSidebar ? "sidebar-menu .show-side-bar" : 'sidebar-menu hide-side-bar'}>
         <div className="price-range-container">
-          <Title style={{ fontSize: "25px", fontWeight: "500" }}>
+          <Title color={'black'} style={{ fontSize: "1rem", fontWeight: "500" }}>
             Price Range
           </Title>
           {/********* */}
@@ -45,7 +45,7 @@ function SideBar({ data, children }) {
                   name=""
                   id=""
                 />
-                <select class="selectmenu-element" id="my-selectmenu">
+                <select className="selectmenu-element" id="my-selectmenu">
                   <option>USD </option>
                   <option>BNB</option>
                   <option>ETH</option>
@@ -60,7 +60,7 @@ function SideBar({ data, children }) {
         </div>
         {/********* */}
         <div className="availability-container">
-          <Title style={{ fontSize: "25px", fontWeight: "500" }}>
+          <Title color={'black'} style={{ fontSize: "25px", fontWeight: "bold" }}>
             Availability
           </Title>
 
@@ -85,7 +85,7 @@ function SideBar({ data, children }) {
           {/********* */}
         </div>
         <div className="market-container">
-          <Title style={{ fontSize: "25px", fontWeight: "500" }}>Market</Title>
+          <Title color={'black'} style={{ fontSize: "25px", fontWeight: "500" }}>Market</Title>
 
           <div className="wrapper">
             <input type="checkbox" name="select" id="check-1" />
@@ -101,7 +101,7 @@ function SideBar({ data, children }) {
           </div>
         </div>
         <div className="type-container">
-          <Title style={{ fontSize: "25px", fontWeight: "500" }}>Type</Title>
+          <Title color={'black'} style={{ fontSize: "25px", fontWeight: "500" }}>Type</Title>
           <div className="wrapper">
             <input type="checkbox" name="select" id="check-type-1" />
             <input type="checkbox" name="select" id="check-type-2" />

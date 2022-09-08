@@ -1,0 +1,41 @@
+.tag-input {
+
+    .main-tags-container {
+        margin-top: 1rem;
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            // width: 50%;
+
+            @include media("<1000px") {
+                width: 100%;
+            }
+
+            .tag {
+                
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-width: fit-content;
+                padding: 5px 5px 5px 10px;
+                background-color: $white;
+                box-shadow: 0px 0px 5px #ccc;
+                margin: 5px;
+                border-radius: 7px;
+                cursor: pointer;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                svg {
+
+                    // transform: translateY(-3px);
+                    margin-left: 0.5rem;
+
+                }
+
+            }
+        }
+    }
+
+}

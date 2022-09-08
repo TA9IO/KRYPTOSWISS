@@ -5,7 +5,7 @@
 
     // creators plural with "S" :)
     .rank {
-        font-size: 1.5em;
+        font-size: 1.2em;
         position: relative;
         top: -15px;
         left: 15px;
@@ -14,10 +14,9 @@
         place-items: center;
         height: 30px;
         min-width: 30px;
-        background-color: #202b55;
+        background-color: #235cd0;
         border-radius: 50px;
         font-weight: bold;
-        box-shadow: 2px 4px 8px 2px black;
 
         &::after {
             content: '';

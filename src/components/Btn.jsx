@@ -1,15 +1,17 @@
 import React from "react";
 
 const STYLES = [
+  'btn-primary',
   "btn--primary--solid--round",
   "btn--primary--solid",
-  "btn--primary--nogradiant--solid",
+  // "btn--primary--nogradiant--solid",
   "btn--no--outline",
   "btn--success--solid",
   "btn--primary--outline",
   "btn--warning--outline",
   "btn--danger--outline",
   "btn--success--outline",
+  "btn--primary--nogradiant--solid--BneiBrakBay"
 ];
 
 const SIZES = ["btn-medium", "btn-small"];

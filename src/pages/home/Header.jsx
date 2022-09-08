@@ -34,8 +34,8 @@ function Header() {
         </p>
         <div className="buttons-section">
           <Btn
-            className="margin-right button-primary"
-            buttonStyle={"btn--primary--solid"}
+            className="margin-right explore-button"
+            buttonStyle={"btn--primary"}
           >
             Explore More
           </Btn>

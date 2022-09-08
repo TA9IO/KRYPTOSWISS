@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useMemo } from "react";
-import { Title, NftInput, Button } from "../../components/";
+import { Title, NftInput, Button, TagInput } from "../../components/";
 import { useDropzone } from "react-dropzone";
 import { BsImageFill } from "react-icons/bs";
 
@@ -9,6 +9,7 @@ function CreateNFT() {
     name: "",
     price: "",
     description: "",
+    tags: [],
   });
   const onDrop = useCallback(() => {
     // Upload Image To IPFS or whatever
@@ -24,19 +25,17 @@ function CreateNFT() {
     accept: "image/*",
     maxSize: 100_000_000, // 100mo in byte
   });
-  const fileStyle = React.useMemo(
-    () =>`file-style`,
-    []
-  );
-  console.log(nftData)
-
+  const fileStyle = React.useMemo(() => `file-style`, []);
+  console.log(nftData);
+  
+  const updateTags = useCallback((t) => setNftData({...nftData, tags: t}), []);
   return (
     <div className="create-nft">
       <div className="nft-file">
         <Title req>Image, Video, Audio or 3D Model</Title>
         <div className="nft-file-upload">
           <div {...getRootProps()} className={fileStyle}>
-          <input {...getInputProps()} />
+            <input {...getInputProps()} />
             <div className="nft-file-info">
               <p>JPG, PNG, GIF, MP4, GLB, GLTF. Max: 100 MB</p>
               <BsImageFill size={150} />
@@ -76,6 +75,13 @@ function CreateNFT() {
           placeholder={"NFT Price"}
           inputType="number"
           handleClick={(e) => setNftData({ ...nftData, price: e.target.value })}
+        />
+      </div>
+      <div className="tag-input">
+        <TagInput
+          tags={nftData.tags}
+          updateTags={updateTags}
+          // **
         />
       </div>
       <div className="nft-create-button">

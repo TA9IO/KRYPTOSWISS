@@ -1,6 +1,13 @@
 import React from "react";
 
-function NftInput({ inputType, title, placeholder, handleClick, req }) {
+function NftInput({
+  inputType,
+  title,
+  placeholder,
+  handleClick,
+  req,
+  handleKeyUp,
+}) {
   return (
     <div className="nft-input-title-container">
       <p className="nft-input-title">
@@ -33,6 +40,7 @@ function NftInput({ inputType, title, placeholder, handleClick, req }) {
           className="nft-input"
           placeholder={placeholder}
           onChange={handleClick}
+          onKeyUp={handleKeyUp}
           type={inputType}
         />
       )}

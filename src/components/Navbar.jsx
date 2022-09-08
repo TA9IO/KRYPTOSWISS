@@ -5,68 +5,71 @@ import { Input, Btn } from "../components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import { Link, NavLink } from "react-router-dom";
-import { BiSearch } from "react-icons/bi";
-import { useLocation } from "react-router-dom";
-
+import { BiSearch }from "react-icons/bi";
+import logo1 from '../assets/images/logo1.svg'
 
 function Navbar() {
+  // console.log(logo1)
   const [toggleOverlay, setToggleOverlay] = React.useState(false);
+ 
 
-  const body = document.body;
-  let lastScroll = 0;
+  // const body = document.body;
+  // let lastScroll = 0;
 
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= 0) {
-      body.classList.remove("scroll-up");
-      return;
-    }
+  //   window.addEventListener("scroll", () => {
+  //     let currentScroll = window.pageYOffset;
+  //     if (currentScroll > 200) {
+  //       // if (currentScroll <= 0) {
+  //       //   body.classList.remove("scroll-up");
+  //       //   return;
+  //       // }
 
-    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-      body.classList.remove("scroll-up");
-      body.classList.add("scroll-down");
-    } else if (
-      currentScroll < lastScroll &&
-      body.classList.contains("scroll-down")
-    ) {
-      body.classList.remove("scroll-down");
-      body.classList.add("scroll-up");
-    }
-    lastScroll = currentScroll;
-  });
-  const { pathname } = useLocation();
-
+  //       if (
+  //         currentScroll > lastScroll &&
+  //         !body.classList.contains("scroll-down")
+  //       ) {
+  //         // body.classList.remove("scroll-up");
+  //         body.classList.add("scroll-down");
+  //       } else if (
+  //         currentScroll < lastScroll &&
+  //         body.classList.contains("scroll-down")
+  //       ) {
+  //         body.classList.remove("scroll-down");
+  //         // body.classList.add("scroll-up");
+  //       }
+  //       lastScroll = currentScroll;
+  //     }
+  //   });
+  
 
   return (
-    <nav  className={pathname === "/Explore" ? 'navbar nav-bg' : 'navbar'}>
+    // <nav className={pathname === "/Explore" ? 'navbar nav-bg' : 'navbar'}>
+    <nav className="navbar nav-bg">
       <div className="inner-flex">
         <div className="logo-container">
-          <img src={logo} alt="logo" />
-          <span className="logo-header">KRYPTOSWISS</span>
+          <img src={logo1} alt="logo" />
+          {/* <span className="logo-header">KRYPTOSWISS</span> */}
         </div>
         {/**** */}
-          <div className="search-bar-container">
-            <Input></Input>
-          </div>
-          <div className="links-container">
-            <ul>
-              {dummyNavData.map((ele) => {
-                return (
-                  <li key={ele.id}>
-                    <NavLink className="link" to={ele.path}>
-                      {ele.name}
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </ul>
+        <div className="search-bar-container">
+          <Input></Input>
+        </div>
+        <div className="links-container">
+          <ul>
+            {dummyNavData.map((ele) => {
+              return (
+                <li key={ele.id}>
+                  <NavLink className="link" to={ele.path}>
+                    {ele.name}
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
         </div>
         {/**** */}
         <div className="wallet-container lgscreen-btn ">
-        
-          <Link to="/CreateNFT">
-          <Btn className="fsz">connect Wallet</Btn>
-          </Link>
+            <Btn className="btn-primary">connect Wallet</Btn>
         </div>
         {/***********-_ SMALL SCREEN _-****************/}
         <div className="navbar-smallscreen">
@@ -98,7 +101,7 @@ function Navbar() {
                   );
                 })}
               </ul>
-              <Btn>connect Wallet</Btn>
+              <Btn className={'connect-wallet-btn'}>connect Wallet</Btn>
             </div>
           )}
         </div>

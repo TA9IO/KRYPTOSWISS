@@ -13,7 +13,6 @@ function Consult() {
   return (
     <main
       className="consult-main-page-container"
-      style={{ paddingTop: "150px" }}
     >
       <div className="consult-container">
         <ItemImage></ItemImage>
