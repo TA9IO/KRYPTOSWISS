@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useMemo } from "react";
-import { Title, NftInput, Button, TagInput } from "../../components/";
+import { Title, NftInput, Button, TagInput, Btn } from "../../components/";
 import { useDropzone } from "react-dropzone";
 import { BsImageFill } from "react-icons/bs";
 

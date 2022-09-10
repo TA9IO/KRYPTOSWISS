@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
 import { dummyNavData } from "../assets/dummyData/navLinks";
 import { Input, Btn } from "../components";
 import { GiHamburgerMenu } from "react-icons/gi";

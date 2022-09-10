@@ -92,7 +92,6 @@
                     &>svg {
 
                         color: $main-border-color;
-
                         @include media("<=500px") {
                             width: 8rem;
                         }

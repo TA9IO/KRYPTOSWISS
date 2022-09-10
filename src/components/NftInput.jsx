@@ -8,6 +8,8 @@ function NftInput({
   req,
   handleKeyUp,
 }) {
+
+  
   return (
     <div className="nft-input-title-container">
       <p className="nft-input-title">
@@ -42,6 +44,7 @@ function NftInput({
           onChange={handleClick}
           onKeyUp={handleKeyUp}
           type={inputType}
+          
         />
       )}
     </div>

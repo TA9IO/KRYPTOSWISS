@@ -1,5 +1,12 @@
 .tag-input {
 
+        // button {
+        //     // so the button will be visible only on touch screens :) 
+        //     // @media (hover: hover) {
+        //     //     display: none;
+        //     // }
+        // }
+
     .main-tags-container {
         margin-top: 1rem;
 
@@ -13,7 +20,7 @@
             }
 
             .tag {
-                
+
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
